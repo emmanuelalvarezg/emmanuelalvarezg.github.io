@@ -1,0 +1,376 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+    font-size: 17px;
+    background:#D2E2E2;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: rgb(255,255,255);
+    background: linear-gradient(100deg, rgba(255,255,255,1) 2%, rgba(47,64,79,1) 35%);
+    color: #F0F1EE;
+    padding: .2rem 8rem .2rem 8rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.header a{
+    color: #F0F1EE;
+    text-decoration: none;
+}
+
+.header img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navegacion ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegacion ul li{
+    display: inline-block;
+}
+
+.navegacion ul li a{
+    display: block;
+    padding: .2rem 1rem;
+    transition: all 0.5s linear;
+    border-radius: 5px;
+}
+
+.navegacion ul li a:hover{
+    background: #3894A1;
+    border-radius: 50px;
+}
+
+.navegacion ul li a.active {
+    background: #3894A1;
+    border-radius: 50px;
+    color: #000;
+}
+
+.main {
+    padding-top: 6rem;
+    background:#D2E2E2;
+    color: #000;
+}
+
+.tituloseccion {
+    text-align: center;
+    padding: .1rem 8rem .1rem 8rem;;
+    margin-top: .5rem;
+}
+
+.tituloseccion, .eventos, .contenedor-slider, .festivales, .conciertos, .reuniones {
+    background: #EDF3F5;
+}
+
+.festivales, .conciertos, .reuniones {
+    padding: .1rem 8rem 1rem 8rem;
+    text-align: left;
+}
+
+.festivales a, .conciertos a, .reuniones a {
+    text-decoration: none;
+}
+
+.eventos {
+    align-items: center;
+    padding: .5rem 8rem 1rem 8rem;
+    text-align: center;
+}
+
+.eventos img {
+    width: 250px;
+    height: 250px;
+    margin-right: 2rem;
+    border-radius: 20px;
+}
+
+.contenedor-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    padding: 0 0 1rem 0;
+}
+
+.slider-screen img{
+    width: 550px;
+    height: 320px;
+    border-radius: 20px;
+    padding: 0;
+    transition: all 0.3s linear;
+}
+
+.slider-screen img:hover{
+    transform: scale(1.005);
+}
+
+.footer {
+    background: #2F404F;
+    color: #F0F1EE;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-colum {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-colum h4 {
+    border-bottom: 1px solid #F0F1EE;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+.footer-colum a {
+    color: #F0F1EE;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: block;
+    transition: all 0.3s linear;
+}
+
+.footer-colum a:hover {
+    transform: scale(1.1);
+}
+
+.link-redes a {
+    display: inline-block;
+    min-height: 40px;
+    width: 50px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #F0F1EE;
+    transition: all 0.3s linear;
+    font-size: 20px;
+}
+
+.link-redes a:hover {
+    background-color: #3894A1;
+    transform: scale(1.1);
+}
+
+.link-contac p{
+    font-size: 13px;
+}
+
+.link-contac p i{
+    font-size: 15px;
+}
+
+.derechosreservados {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 1020px) {
+
+    body {
+        font-size: 15px;
+        background:#D2E2E2;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        padding: .2rem 1rem;
+    }
+
+    .navegacion {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navegacion ul {
+        display: none;
+    }
+
+    .navegacion ul.show {
+        display: block;
+    }
+
+    .navegacion ul li{
+        display: block;
+    }
+
+    .navegacion ul li a{
+        display: block;
+        padding: .2rem .2rem;
+        transition: all 0.5s linear;
+        border-radius: 5px;
+    }
+
+    .navegacion ul li a:hover{
+        background: #3894A1;
+        border-radius: 50px;
+    }
+
+    .navegacion ul li a.active {
+        background: #3894A1;
+        border-radius: 50px;
+        color: #000;
+    }
+
+    .tituloseccion {
+        text-align: center;
+        padding: 1rem 4rem .1rem 4rem;
+        margin-top: .5rem;
+    }
+
+    .festivales, .conciertos, .reuniones {
+        padding: .1rem 4rem 1rem 4rem;
+    }
+
+    .eventos {
+        padding: .1rem 4rem 1rem 4rem;
+    }
+
+    .contenedor-slider {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #2F404F;
+        padding: 0;
+    }
+    
+    .slider-screen img{
+        width: 350px;
+        height: 220px;
+        border-radius: 20px;
+        padding: 0;
+        transition: all 0.3s linear;
+    }
+    
+    .slider-screen img:hover{
+        transform: scale(1.005);
+    }
+
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-colum {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+
+    body {
+        font-size: 13px;
+        background:#D2E2E2;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tituloseccion {
+        text-align: center;
+        padding: 1rem 2rem .1rem 2rem;
+        margin-top: .5rem;
+    }
+
+    .festivales, .conciertos, .reuniones {
+        padding: .1rem 2rem 1rem 2rem;
+    }
+
+    .eventos {
+        padding: .1rem 2rem 1rem 2rem;
+    }
+
+    .contenedor-slider {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #2F404F;
+        padding: 0;
+    }
+    
+    .slider-screen img{
+        width: 240px;
+        height: 170px;
+        border-radius: 20px;
+        padding: 0;
+        transition: all 0.3s linear;
+    }
+    
+    .slider-screen img:hover{
+        transform: scale(1.005);
+    }
+
+    .footer {
+        margin-top: .2rem;
+        padding: 1rem;
+        font-size: .8rem;
+    }
+
+    .footer-colum {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .link-contac p{
+        font-size: 10px;
+    }
+    
+    .link-contac p i{
+        font-size: 10px;
+    }
+    
+    .derechosreservados {
+        padding-top: 0rem;
+        text-align: center;
+        font-size: 10px;
+    }
+}

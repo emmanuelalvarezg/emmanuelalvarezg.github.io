@@ -1,0 +1,799 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+    font-size: 17px;
+    background:#D2E2E2;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: rgb(255,255,255);
+    background: linear-gradient(100deg, rgba(255,255,255,1) 2%, rgba(47,64,79,1) 35%);
+    color: #F0F1EE;
+    padding: .2rem 8rem .2rem 8rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.header a{
+    color: #F0F1EE;
+    text-decoration: none;
+}
+
+.header img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navegacion ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegacion ul li{
+    display: inline-block;
+}
+
+.navegacion ul li a{
+    display: block;
+    padding: .2rem 1rem;
+    transition: all 0.5s linear;
+    border-radius: 5px;
+}
+
+.navegacion ul li a:hover{
+    background: #3894A1;
+    border-radius: 50px;
+}
+
+.navegacion ul li a.active {
+    background: #3894A1;
+    border-radius: 50px;
+    color: #000;
+}
+
+.main {
+    padding-top: 6rem;
+    background:#D2E2E2;
+    color: #000;
+}
+
+.tituloseccion, .menuservicios, .terapias, .talleres, .haztesocio {
+    background: #EDF3F5;
+}
+
+.menuservicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.menuservicios img {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    border-radius: 16px;
+    padding-bottom: 2rem;
+    background-color: #EDF3F5;
+}
+
+.menuservicios .cajas {
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: #018F8C;
+    margin: .5rem;
+}
+
+.menuservicios a {
+    background: #F7C050;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    display: block;
+    padding: .2rem 1rem;
+    transition: all 0.5s linear;
+}
+
+.menuservicios a:hover{
+    background: #e8824f;
+    border-radius: 50px;
+    transform: scale(1.02);
+}
+
+.terapias {
+    padding: .1rem 8rem 1rem 8rem;
+}
+
+.talleres {
+    padding: .1rem 8rem 1rem 8rem;
+    text-align: center;
+}
+
+.menutalleres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top center;
+    padding: 0;
+}
+
+.menutalleres .cajas{
+    display: block;
+    align-items: flex;
+    padding: .5rem;
+    text-align: center;
+    width: 10rem;
+    color: #fff;
+    margin: .5rem;
+}
+
+.cajas {
+    background: #018F8C;
+    border-radius: 16px;
+}
+
+.menutalleres .cajas a {
+    display: inline-block;
+    background: #F7C050;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: .2rem .5rem;
+    transition: all 0.5s linear;
+}
+
+.menutalleres .cajas a:hover{
+    border-radius: 50px;
+    transform: scale(1.1);
+    background: #FDB35D;
+}
+
+.menutalleres img{
+    width: 130px;
+    height: 130px;
+    border-radius: 16px;
+    background-color: #EDF3F5;
+    padding: .5rem;
+}
+
+.haztesocio {
+    padding: .1rem 8rem 1rem 8rem;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    font-family: 'Montserrat', sans-serif;
+    color: #F0F1EE;
+    display: inline-block;
+}
+
+.form-group {
+    background:#018F8C;
+    border-radius: 16px;
+    width: 500px;
+    box-shadow: 0 4px 30px #018F8C;
+    margin: 2rem 0 2rem 0;
+}
+
+.form-group header {
+    padding: 1.5rem 0 1rem 0;
+    font-size: 20px;
+}
+
+.input-box {
+    display: wrap;
+    flex-wrap: wrap;
+}
+
+.input-box2 {
+    display: wrap;
+    flex-wrap: wrap;
+}
+
+.input-box input {
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    height: 40px;
+    width: 195px;
+    margin: .5rem .5rem;
+}
+
+.input-box2 input {
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    height: 40px;
+    width: 415px;
+    margin: 0;
+}
+
+.botonregistro {
+    padding: 2rem 0 1.5rem 0;
+}
+
+.botonregistro .boton{
+    background-color: #018F8C;
+    font-family: 'Montserrat', sans-serif;
+    color: #F0F1EE;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    padding: .5rem 1rem .5rem 1rem;
+    font-size: 15px;
+    transition: all 0.5s linear;
+}
+
+.botonregistro .boton:hover{
+    background: #F7C050;
+    border-radius: 50px;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.tituloseccion {
+    text-align: center;
+    padding: 1rem 8rem .1rem 8rem;
+    margin-top: .5rem;
+}
+
+.footer {
+    background: #2F404F;
+    color: #F0F1EE;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-colum {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-colum h4 {
+    border-bottom: 1px solid #F0F1EE;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+.footer-colum a {
+    color: #F0F1EE;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: block;
+    transition: all 0.3s linear;
+}
+
+.footer-colum a:hover {
+    transform: scale(1.1);
+}
+
+.link-redes a{
+    display: inline-block;
+    min-height: 40px;
+    width: 50px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #F0F1EE;
+    transition: all 0.3s linear;
+    font-size: 20px;
+}
+
+.link-redes a:hover {
+    background-color: #3894A1;
+    transform: scale(1.1);
+}
+
+.link-contac p{
+    font-size: 13px;
+}
+
+.link-contac p i{
+    font-size: 15px;
+}
+
+.derechosreservados {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 1020px) {
+        
+    body {
+        font-size: 15px;
+        background:#D2E2E2;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        padding: .2rem 1rem;
+    }
+
+    .navegacion {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navegacion ul {
+        display: none;
+    }
+
+    .navegacion ul.show {
+        display: block;
+    }
+
+    .navegacion ul li{
+        display: block;
+    }
+
+    .navegacion ul li a{
+        display: block;
+        padding: .2rem .2rem;
+        transition: all 0.5s linear;
+        border-radius: 5px;
+    }
+
+    .navegacion ul li a:hover{
+        background: #3894A1;
+        border-radius: 50px;
+    }
+
+    .navegacion ul li a.active {
+        background: #3894A1;
+        border-radius: 50px;
+        color: #000;
+    }
+
+    .tituloseccion {
+        text-align: center;
+        padding: 1rem 4rem .1rem 4rem;
+        margin-top: .5rem;
+    }
+
+    .menuservicios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .menuservicios img {
+        width: 100px;
+        height: 100px;
+        margin: 0 0 .5rem 0;
+        border-radius: 16px;
+        padding-bottom: .5rem;
+        background-color: #EDF3F5;
+    }
+
+    .menuservicios .cajas {
+        display: block;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 16px;
+        background: #018F8C;
+        margin: 0 1rem 1rem 1rem;
+        font-size: 12px;
+    }
+
+    .terapias {
+        padding: .1rem 4rem 1rem 4rem;
+        text-align: left;
+    }
+
+    .talleres {
+        padding: .1rem 4rem 1rem 4rem;
+        text-align: center;
+    }
+
+    .menutalleres {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: top center;
+        padding: 0;
+    }
+    
+    .menutalleres .cajas{
+        display: block;
+        align-items: flex;
+        padding: 1rem .3rem 1rem .3rem;
+        text-align: center;
+        width: 8rem;
+        color: #fff;
+        margin: 1rem .5rem 1rem .5rem;
+        font-size: 12px;
+        border-radius: 16px;
+    }
+    
+    .menutalleres img{
+        width: 100px;
+        height: 100px;
+        border-radius: 16px;
+        background-color: #EDF3F5;
+    }
+       
+    .haztesocio {
+        padding: .1rem 4rem 1rem 4rem;
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form {
+        font-family: 'Montserrat', sans-serif;
+        color: #F0F1EE;
+        display: inline-block;
+    }
+
+    .form-group {
+        background:#018F8C;
+        border-radius: 16px;
+        width: 450px;
+        box-shadow: 0 4px 30px #018F8C;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .form-group header {
+        padding: 1rem 0 1rem 0;
+        font-size: 18px;
+    }
+
+    .input-box {
+        display: wrap;
+        flex-wrap: wrap;
+    }
+
+    .input-box2 {
+        display: wrap;
+        flex-wrap: wrap;
+    }
+
+    .input-box input {
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        height: 23px;
+        width: 195px;
+        margin: .5rem .5rem;
+    }
+
+    .input-box2 input {
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        height: 23px;
+        width: 415px;
+        margin: 0;
+    }
+
+    .botonregistro {
+        padding: 1rem 0 1.5rem 0;
+    }
+
+    .botonregistro .boton {
+        background-color: #018F8C;
+        font-family: 'Montserrat', sans-serif;
+        color: #F0F1EE;
+        border-radius: 25px;
+        border: 1px solid #fff;
+        padding: .2rem 1rem .2rem 1rem;
+        font-size: 15px;
+        transition: all 0.5s linear;
+    }
+
+    .botonregistro .boton:hover {
+        background: #F7C050;
+        border-radius: 50px;
+        color: #000;
+        transform: scale(1.05);
+    }
+
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-colum {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+        
+    body {
+        font-size: 13px;
+        background:#D2E2E2;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tituloseccion {
+        text-align: center;
+        padding: 1rem 2rem .1rem 2rem;
+        margin-top: .5rem;
+    }
+
+    .menuservicios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .menuservicios img {
+        width: 80px;
+        height: 80px;
+        margin: 0;
+        border-radius: 16px;
+        padding-bottom: .5rem;
+        background-color: #EDF3F5;
+    }
+
+    .menuservicios .cajas {
+        display: block;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 16px;
+        background: #018F8C;
+        margin: 1rem;
+        font-size: 10px;
+    }
+
+    .terapias {
+        padding: .1rem 2rem 1rem 2rem;
+        text-align: left;
+    }
+
+    .talleres {
+        padding: .1rem 2rem 1rem 2rem;
+        text-align: center;
+    }
+
+    .menutalleres {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: top center;
+        padding: 0;
+    }
+    
+    .menutalleres .cajas{
+        display: block;
+        align-items: flex;
+        text-align: center;
+        padding: .5rem .2rem .2rem .2rem;
+        border-radius: 16px;
+        background: #018F8C;
+        margin: .1rem;
+        font-size: 11px;
+    }
+    
+    .menutalleres img{
+        width: 80px;
+        height: 80px;
+        border-radius: 16px;
+        background-color: #EDF3F5;
+    }
+    
+    .haztesocio {
+        padding: .1rem 2rem 1rem 2rem;
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form {
+        font-family: 'Montserrat', sans-serif;
+        color: #F0F1EE;
+        display: inline-block;
+    }
+
+    .form-group {
+        background:#018F8C;
+        border-radius: 16px;
+        width: 300px;
+        box-shadow: 0 4px 30px #018F8C;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .form-group header {
+        padding: 1rem 0 1rem 0;
+        font-size: 15px;
+    }
+
+    .input-box {
+        display: wrap;
+        flex-wrap: wrap;
+    }
+
+    .input-box2 {
+        display: wrap;
+        flex-wrap: wrap;
+    }
+
+    .input-box input {
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        height: 15px;
+        width: 113px;
+        margin: .5rem .5rem;
+        font-size: 10px;
+    }
+
+    .input-box2 input {
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        height: 15px;
+        width: 250px;
+        margin: .2rem 0;
+        font-size: 10px;
+    }
+
+    .botonregistro {
+        padding: 1rem 0 1rem 0;
+    }
+
+    .botonregistro .boton{
+        background-color: #018F8C;
+        font-family: 'Montserrat', sans-serif;
+        color: #F0F1EE;
+        border-radius: 25px;
+        border: 1px solid #fff;
+        padding: .5rem 1rem .5rem 1rem;
+        font-size: 10px;
+        transition: all 0.5s linear;
+    }
+
+    .botonregistro .boton:hover{
+        background: #F7C050;
+        border-radius: 50px;
+        color: #000;
+        transform: scale(1.05);
+    }
+
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-colum {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .haztesocio {
+        padding: .1rem 2rem 1rem 2rem;
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form {
+        font-family: 'Montserrat', sans-serif;
+        color: #F0F1EE;
+        display: inline-block;
+    }
+
+    .form-group {
+        background:#018F8C;
+        border-radius: 16px;
+        width: 200px;
+        box-shadow: 0 4px 30px #018F8C;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .form-group header {
+        padding: .5rem 0 .2rem 0;
+        font-size: 15px;
+    }
+
+    .input-box {
+        display: wrap;
+        flex-wrap: wrap;
+    }
+
+    .input-box2 {
+        display: wrap;
+        flex-wrap: wrap;
+    }
+
+    .input-box input {
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        height: 15px;
+        width: 113px;
+        margin: .5rem .5rem;
+        font-size: 10px;
+    }
+
+    .input-box2 input {
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        height: 15px;
+        width: 115px;
+        margin: .2rem 0;
+        font-size: 10px;
+    }
+
+    .botonregistro {
+        padding: 1rem 0 1rem 0;
+    }
+
+    .botonregistro .boton {
+        background-color: #018F8C;
+        font-family: 'Montserrat', sans-serif;
+        color: #F0F1EE;
+        border-radius: 25px;
+        border: 1px solid #fff;
+        padding: .5rem 1rem .5rem 1rem;
+        font-size: 9px;
+        transition: all 0.5s linear;
+    }
+
+    .botonregistro .boton:hover {
+        background: #F7C050;
+        border-radius: 50px;
+        color: #000;
+        transform: scale(1.05);
+    }
+}

@@ -1,0 +1,31 @@
+.success {
+    font-family: 'Montserrat', sans-serif;
+    color: #69ec69;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.error {
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.message {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffff;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1020px) {
+    .success, .error , .message {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+    .success, .error , .message {
+        font-size: 13px;
+    }
+}
