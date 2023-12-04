@@ -297,7 +297,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 384px) {
+@media only screen and (max-width: 435px) {
 
     body {
         font-size: 13px;
